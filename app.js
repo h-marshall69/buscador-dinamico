@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const search = document.querySelector('#search')
+    //const search = document.querySelector('#search')
     const tableContainer = document.querySelector('#results tbody')
     const resultsContainer = document.querySelector('#resultsContainer')
     const errorsContainer = document.querySelector('.errors-container')

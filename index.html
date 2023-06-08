@@ -12,6 +12,7 @@
         <h1>Busqueda de datos con JS, PHP y MySQL</h1>
         <div class="input-container">
             <input type="search" id="search" placeholder="Buscar un autor por nombre o apellido">
+            <input type="button" id="searchButton" value="Buscar">
         </div>
         <div class="errors-container" style="display: none;">
             <p></p>
@@ -22,12 +23,15 @@
                     <th>ID</th>
                     <th>Nombre</th>
                 </thead>
-                <tbody>
-
+                <tbody id="resultsBody">
                 </tbody>
             </table>
+            <div id="paginationButtons">
+                <input type="button" id="previousButton" value="Anterior" disabled>
+                <input type="button" id="nextButton" value="Siguiente" disabled>
+            </div>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="app1.js"></script>
 </body>
 </html>

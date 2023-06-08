@@ -2,10 +2,10 @@
 require_once "database.php";
 
 $search_criteria = $_POST['search_criteria'];
+$start_index = $_POST['start_index'];
+$end_index = $_POST['end_index'];
 
-
-
-$query = "SELECT id, nombre FROM localidades WHERE nombre LIKE '%".$search_criteria."%'";
+$query = "SELECT id, nombre FROM localidades WHERE nombre LIKE '%".$search_criteria."%' LIMIT ".$start_index.", ".$end_index;
 
 $authors = [];
 $errors = ['data' => false];
